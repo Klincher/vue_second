@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<h1>Todo application</h1>
+<hr>
+<!-- добавление компонента TodoList -->
+<TodoList/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// импорт компонента TodoList
+import TodoList from '@/components/TodoList'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // регистрация обьекта компонента TodoList
+    TodoList: TodoList //можно просто TodoList
   }
 }
 </script>
